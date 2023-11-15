@@ -10,29 +10,28 @@ import { Pagination } from 'swiper/modules';
 
 interface IPropsSwiper {
     slidePerView?: number
-    updateIndex: (index: number) => void
     setCurrentData: (data: any) => void
     data: any[]
 }
 
-const SwiperCarousel: React.FC<IPropsSwiper> = ({ updateIndex, setCurrentData ,data}) => {
+const SwiperCarousel: React.FC<IPropsSwiper> = ({  setCurrentData ,data}) => {
     return (
         <Swiper
             loop
             modules={[Pagination]}
-            slidesPerView={4}
+            slidesPerView={5}
             initialSlide={1}
-            onSliderMove={((slide) => {
-                updateIndex(slide.realIndex)
+            tabIndex={1}
+            onSlideNextTransitionEnd={((slide) => {
                 setCurrentData(data[slide.realIndex])
             })}
-            tabIndex={5}
+            slideActiveClass='banner-active'
         >
             {
                 data.map((item) =>
                     <SwiperSlide key={item.id}>
                         <div
-                            className='w-48 h-72 cursor-pointer rounded-sm p-3 bg-white flex flex-col justify-end leading-2 shadow shadow-b-xl'
+                            className='w-40 h-60 cursor-pointer rounded-md p-3 bg-white flex flex-col justify-end leading-2 shadow shadow-b-xl'
                             style={{ backgroundImage: `url(${item.imageSrc})`, objectFit:'cover', backgroundRepeat:'no-repeat'}}
                         >
                             <p className='uppercase text-white text-xs'>{ item.label}</p>
