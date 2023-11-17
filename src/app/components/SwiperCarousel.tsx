@@ -31,8 +31,8 @@ const SwiperCarousel: React.FC<IPropsSwiper> = ({  setCurrentData ,data}) => {
                 data.map((item) =>
                     <SwiperSlide key={item.id}>
                         <div
-                            className='w-40 h-60 cursor-pointer rounded-md p-3 bg-white flex flex-col justify-end leading-2 shadow shadow-b-xl'
-                            style={{ backgroundImage: `url(${item.imageSrc})`, objectFit:'cover', backgroundRepeat:'no-repeat'}}
+                            className='w-40 h-60 cursor-pointer rounded-lg p-3 bg-white flex flex-col justify-end leading-2 shadow shadow-b-xl '
+                            style={{ backgroundImage: `url(${item.imageSrc})`, objectFit: 'cover', backgroundRepeat: 'no-repeat' }}
                         >
                             <p className='uppercase text-white text-xs'>{ item.label}</p>
                             <h1 className='font-bold uppercase text-white'>{item.title}</h1>
