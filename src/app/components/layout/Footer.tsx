@@ -3,67 +3,22 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="bg-delima-primary border-t border-gray-200 text-white">
-            <div className="mx-auto w-full max-w-screen-xl p-5 md:px-20 py-6 lg:py-8">
-                <div className="md:flex md:justify-between">
-                    <div className="md:w-4/6 mb-4 md:mb-0 flex flex-col items-start justify-around">
-                        <Image className='my-5' src={'/assets/images/delima-text-white.svg'} alt='delima' width={60} height={60} />
-                        <p className="text-xs">
-                            Jl. Jend. Sudirman Kav 44-46 <br />
-                            Kota Jakarta Pusat,<br />
-                            DKI Jakarta 10210<br />
-
-                        </p>
-                        <p className="text-xs mt-2">
-                            1500017 <br />
-                            callbri@bri.co.id
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                        <div>
-                            <h2 className="mb-4 text-md font-semibold">Legal</h2>
-                            <ul >
-                                <li>
-                                    <p>Kebijakan Privasi</p>
-                                </li>
-                                <li>
-                                    <p>Syarat dan Ketentuan Umum</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 className="mb-4 text-md font-semibold">Pusat Bantuan</h2>
-                            <ul >
-                                <li>
-                                    <p>FAQ</p>
-                                </li>
-                                <li>
-                                    <p>Bantuan</p>
-                                </li>
-                                <li>
-                                    <p>Hubungi Kami</p>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 className="mb-4 text-md font-semibold">Tentang Delima</h2>
-                            <ul >
-                                <li>
-                                    <p>Profil Delima</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='justify-end'>
-                            <Image src={'/assets/images/bri-white.svg'} alt='Bank Rakyat Indonesia (BRI)' width={60} height={60} />
-                        </div>
-                    </div>
-                </div>
+        <div className="flex flex-row w-full h-32">
+            <div className="basis-1/4 flex flex-col justify-start items-center space-y-1">
+                <h1 className="pr-44 text-[20px]">Contact</h1>
+                <h1 className="m-5 pl-20 text-[20px]">Stunning Black and White Street Map Wallpaper. Brilliant detail and premium quality.</h1>
             </div>
-            <hr className="my-2 border-gray-200 sm:mx-auto" />
-            <span className="block text-sm  text-white text-center p-2"> © 2023 PT.Bank Rakyat Indonesia (Persero) Tbk. | All Rights Reserved.</span>
-        </footer>
-
+            <div className="basis-1/4 flex flex-col justify-center items-start">
+                <h1 className="text-[20px]">+62 013423573453</h1>
+                <h1 className="text-[20px]">tricora@admin.com</h1>
+            </div>
+            <div className="basis-1/2 flex justify-end items-center  space-x-5 pr-10">
+                <Image src={'/images/fb.png'} alt="fb logo" width={20} height={50} />
+                <Image src={'/images/ig.png'} alt="fb logo" width={20} height={50} />
+                <Image src={'/images/twt.png'} alt="fb logo" width={20} height={50} />
+                <Image src={'/images/yt.png'} alt="fb logo" width={20} height={50} />
+            </div>
+        </div>
     )
 }
 
