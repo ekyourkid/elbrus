@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main className="w-screen overflow-hidden">
       <HeroSlider />
+      <JumboArticle />
       <div className='p-10 px-20'>
-        <JumboArticle />
         <CardArticle />
       </div>
       <EventBanner />
-      <div className='py-36 px-20 flex flex-col space-y-20'>
         <ArticleList />
+      <div className='py-36 px-20 flex flex-col space-y-20'>
         <MerchCatalog />
         <CTABanner />
       </div>
