@@ -4,9 +4,9 @@ import Image from "next/image";
 const ArticleList = () => {
 
     return (
-        <div className="bg-[#F5F4F4] flex justify-between -space-x-10">
+        <div className="bg-[#F5F4F4] px-20 p-10 flex justify-between space-x-20">
             <div className=" w-7/12">
-                <h1 className="text-[28px] font-semibold pb-5">READ THE PATH <span className="text-red-600">.</span></h1>
+                <h1 className="text-2xl font-semibold pb-5">READ THE PATH <span className="text-red-600">.</span></h1>
                 <Image src={'/images/path-1.jpeg'} alt="path" width={200} height={414} className="w-full h-96 object-cover shadow-sm shadow-black" />
                 <section className="  w-11/12 max-h-32 -space-y-5">
                     <h1 className="text-[44px] font-semibold m-6 leading-none uppercase">10 Tips Mendaki Gunung, Biar Pengalaman Aman dan Seru!</h1>
