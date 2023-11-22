@@ -4,13 +4,16 @@ import Image from "next/image";
 
 const CardArticle = () => {
     return (
-        <main className="flex flex-row justify-around ">
-            <div className="bg-red-400 basis-80">
-                <Image src={'/images/article-1.jpeg'} alt="" width={250} height={100} className="object-cover" />
-            </div>
-            <div className="bg-red-400 basis-80">1</div>
-            <div className="bg-red-400 basis-80">1</div>
-            <div className="bg-red-400 basis-80">1</div>
+        <main className="bg-[#F5F4F4] p-5 grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full justify-items-center gap-5">
+            {[1, 2, 3, 4].map(() =>
+                <article className="bg-white p-3 h-full">
+                    <Image src={'/images/article-1.jpeg'} alt="card-photo" width={200} height={300} className="h-72 w-full object-cover" />
+                    <h1 className=" w-full leading-none mt-3 text-md font-semibold">
+                        EXPEDISI JAVA ANDESIT MARATHON 2023
+                    </h1>
+                </article>
+            )}
+
         </main>
     )
 }

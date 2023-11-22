@@ -13,7 +13,7 @@ export default function Home() {
     <main className="w-screen overflow-x-hidden">
       <HeroSlider />
       <JumboArticle />
-      <div className='p-10 px-20'>
+      <div className=''>
         <CardArticle />
       </div>
       <EventBanner />

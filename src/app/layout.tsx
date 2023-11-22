@@ -37,7 +37,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body className={"w-screen bg-red-200 overflow-x-hidden"}>{children}</body>
+      <body className={"w-screen overflow-x-hidden"}>{children}</body>
       <Footer />
     </html>
   )
