@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Josefin_Sans, Jost } from 'next/font/google'
 import './globals.css'
 import Footer from './components/layout/Footer'
+import { TailwindIndicator } from './components/utils/breakpoint-indicator'
 
 const josefin_sans = Josefin_Sans({ subsets: ['latin'] })
 const jost = Jost({ subsets: ['latin'] })
@@ -18,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <TailwindIndicator/>
       <body className={josefin_sans.className + " " + jost.className}>{children}</body>
       <Footer />
     </html>
