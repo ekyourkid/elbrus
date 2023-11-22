@@ -49,7 +49,7 @@ const HeroSlider = () => {
 
   return (
     <div
-      className={` banner relative flex items-end justify-center w-screen h-screen bg-cover`}
+      className={`w-screen h-screen banner relative flex items-end justify-center bg-cover`}
       style={{ backgroundImage: `url(${currentData.bgSrc})`, backgroundColor: 'rgba(11, 11, 11, 0.3)', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'multiply' }}
     >
       <div className='w-screen h-2/3 flex items-center bg-black bg-opacity-5 bg-blur bg-gradient-to-t from-gray-900'>
