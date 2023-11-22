@@ -1,8 +1,7 @@
-import type { Metadata } from 'next'
 import { Josefin_Sans, Jost } from 'next/font/google'
 import './globals.css'
 import Footer from './components/layout/Footer'
-import Head from 'next/head'
+import { TailwindIndicator } from './components/utils/breakpoint-indicator'
 
 const josefin_sans = Josefin_Sans({ subsets: ['latin'] })
 const jost = Jost({ subsets: ['latin'] })
@@ -14,7 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <head>
+      <TailwindIndicator />
+      <head>
         <title>Tricora Trailblaze</title>
         <meta charSet="utf-8" />
         <meta name="google" content="notranslate" />
@@ -37,7 +37,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body className={josefin_sans.className + " " + jost.className}>{children}</body>
+      <body className={"w-screen bg-red-200 overflow-x-hidden"}>{children}</body>
       <Footer />
     </html>
   )
