@@ -10,14 +10,14 @@ import CTABanner from './components/cta-banner'
 
 export default function Home() {
   return (
-    <main className="w-screen overflow-hidden">
-      <HeroSlider />
+    <main className="w-screen overflow-x-hidden">
+      {/* <HeroSlider /> */}
       <JumboArticle />
       <div className='p-10 px-20'>
         <CardArticle />
       </div>
       <EventBanner />
-        <ArticleList />
+      <ArticleList />
       <div className='py-36 px-20 flex flex-col space-y-20'>
         <MerchCatalog />
         <CTABanner />

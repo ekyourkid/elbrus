@@ -74,40 +74,10 @@ const ArticleDetailPage = () => {
                             </h2>
                             <hr className="h-[1px] w-full mt-3" />
                         </article>
-                        
+
                     </div>
                 </div>
             </div>
-            {/* <div className="bg-[#F5F4F4] flex justify-between -space-x-10">
-                <div className=" w-7/12 m-10">
-                    <h1 className="text-[28px] font-semibold pb-5">
-                        READ THE PATH <span className="text-red-600"> . </span>
-                    </h1>
-                    <Image src={'/images/path-1.jpeg'} alt="path" width={200} height={414} className="w-full h-96 object-cover shadow-sm shadow-black" />
-                    <section className=" bg-white w-1/7 max-h-96 -space-y-1">
-                        <h1 className="text-[32px] font-semibold pt-5 px-6 leading-none uppercase">
-                            10 Tips Mendaki Gunung, Biar Pengalaman Aman dan Seru!
-                        </h1>
-                        <h2 className="text-[22px] px-6 pt-2 font-thin">
-                            Oct. 9, 2022 by  tvt
-                        </h2>
-                        <p className=" text-[22px] px-6 py-5 font-thin">
-                            Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur. berangkat menggunakan mobil carteran dari teman Mapala Palmasti banjarnegara (Rhino), Sampai ditebing sepikul sekitar pukul 05.00 pagi.
-                        </p>
-                    </section>
-                </div>
-            <div className=" bg-red-300 flex flex-col w-2/5 my-20">
-                <div className="py-16 space-y-1 ">
-                        <h1 className="text-[24px] font-semibold leading-none uppercase">
-                            10 Tips Mendaki Gunung, Biar Pengalaman Aman dan Seru!
-                        </h1>
-                        <h2 className="text-[22px] text-gray-400">
-                            Oct. 9, 2022 by  tvt
-                        </h2>
-                        <hr className="h-[1px] w-full bg-gray-600" />
-                    </div>
-                </div>
-            </div> */}
         </main>
     )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="flex flex-row w-full h-32">
+        <div className="flex flex-row w-screen h-32 overflow-hidden">
             <div className="basis-1/4 flex flex-col justify-start items-center space-y-1">
                 <h1 className="pr-44 text-[20px]">Contact</h1>
                 <h1 className="m-5 pl-20 text-[20px]">Stunning Black and White Street Map Wallpaper. Brilliant detail and premium quality.</h1>
