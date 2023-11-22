@@ -11,7 +11,7 @@ import CTABanner from './components/cta-banner'
 export default function Home() {
   return (
     <main className="w-screen overflow-x-hidden">
-      {/* <HeroSlider /> */}
+      <HeroSlider />
       <JumboArticle />
       <div className='p-10 px-20'>
         <CardArticle />

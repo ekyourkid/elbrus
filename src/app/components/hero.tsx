@@ -29,12 +29,12 @@ const TextSection: React.FC<{ data: any }> = ({ data }) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='w-3/5 h-80 flex flex-col space-y-5 ml-20'>
+      <div className='w-full md:w-3/5 h-full flex flex-col space-y-5 m-0 md:ml-20'>
         <section className='flex justify-start items-center space-x-2'>
           <p className='grit bg-[#F92424] w-10 h-10 flex justify-center items-center font-bold text-2xl text-white'>0{data.id + 1}</p>
           <h1 className='font-base text-white uppercase'>{data?.label}</h1>
         </section>
-        <h2 className='grit text-[80px] font-bold text-white leading-[95%] uppercase'>{data?.title}</h2>
+        <h2 className='grit text-5xl md:text-[80px] font-bold text-white leading-[95%] uppercase'>{data?.title}</h2>
         <p className='text-white font-light text-sm'>{data?.description} Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur</p>
         <a href="http://www.nature.org/new-wild/keep-hope-alive/" className="btn grit">
           Read More
@@ -49,15 +49,18 @@ const HeroSlider = () => {
 
   return (
     <div
-      className={`w-screen h-screen banner relative flex items-end justify-center bg-cover`}
+      className={`w-screen h-screen banner bg-cover flex flex-col justify-end items-end`}
       style={{ backgroundImage: `url(${currentData.bgSrc})`, backgroundColor: 'rgba(11, 11, 11, 0.3)', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'multiply' }}
     >
-      <div className='w-screen h-2/3 flex items-center bg-black bg-opacity-5 bg-blur bg-gradient-to-t from-gray-900'>
-        {/* TEXT SECTION */}
+      {/* MOBILE */}
+      <div className='lg:hidden h-auto p-10 px-8 w-full flex justify-end items-end space-y-10 flex-col md:flex-row md:justify-start  bg-black bg-opacity-5 bg-blur bg-gradient-to-t from-gray-900'>
+        <SwiperCarousel setCurrentData={setCurrentData} data={LIST} slidePerView={1} cardVariant='label' />
+      </div>
+      {/* DESKTOP */}
+      <div className='hidden lg:flex h-full w-full flex-col md:flex-row justify-end md:justify-start items-end p-10 md:pb-20 bg-black bg-opacity-5 bg-blur bg-gradient-to-t from-gray-900'>
         <TextSection data={currentData} />
-        {/* SLIDER SECTION */}
-        <div className='w-2/3 h-auto -mr-32 bg-transparent'>
-          <SwiperCarousel setCurrentData={setCurrentData} data={LIST} />
+        <div className='w-full md:w-2/3 h-auto md:-mr-32 bg-transparent mt-5'>
+          <SwiperCarousel setCurrentData={setCurrentData} data={LIST} slidePerView={5} />
         </div>
       </div>
     </div>
