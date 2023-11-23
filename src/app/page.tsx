@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <EventBanner />
       <ArticleList />
-      <div className='py-36 px-20 flex flex-col space-y-20'>
         <MerchCatalog />
+      <div className='p-5'>
         <CTABanner />
       </div>
       <Contact />
