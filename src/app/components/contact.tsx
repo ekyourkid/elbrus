@@ -4,7 +4,7 @@ const Contact = () => {
 
     return (
         <main>
-            <div className="flex flex-col space-y-3 p-5" style={{backgroundImage: 'url(./images/maps-1.jpeg)'}}>
+            <div className="flex flex-col space-y-3 p-5 bg-no-repeat bg-cover" style={{backgroundImage: 'url(./images/maps-1.jpeg)'}}>
             {/* media screen for XS - MD */}
                 <div className="lg:hidden text-xl font-bold uppercase text-black">contact us <span className="text-red-600">.</span></div>
                 <div className="lg:hidden bg-white w-full p-5 space-y-3 rounded-lg shadow-sm shadow-black">
