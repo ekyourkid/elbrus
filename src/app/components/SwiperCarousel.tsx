@@ -11,6 +11,7 @@ interface IPropsSwiper {
     setCurrentData: (data: any) => void
     data: any[]
     cardVariant?: 'small' | 'label'
+    setPlayVideo:(data: any) => void
 }
 
 const SliderCardSmall: React.FC<{ item: { label: string, title: string, imageSrc: string } }> = ({ item }) => {
@@ -29,7 +30,7 @@ const SliderCardLabel: React.FC<{ item: { id: number, label: string, title: stri
     return (
         <div>
             <section
-                className='w-full min-h-20 p-4 opacity-80 flex justify-between'
+                className='w-full min-h-20 p-4 opacity-80 flex flex-col md:flex-row justify-between'
                 style={{ backgroundImage: `url('/images/maps-con.png')`, objectFit: 'contain', backgroundRepeat: 'no-repeat' }}
             >
                 <div className='flex space-x-4'>
@@ -48,7 +49,7 @@ const SliderCardLabel: React.FC<{ item: { id: number, label: string, title: stri
     )
 }
 
-const SwiperCarousel: React.FC<IPropsSwiper> = ({ setCurrentData, data, slidePerView, cardVariant = 'small' }) => {
+const SwiperCarousel: React.FC<IPropsSwiper> = ({ setCurrentData, data, slidePerView, cardVariant = 'small',setPlayVideo }) => {
     return (
         <Swiper
             loop
@@ -60,6 +61,7 @@ const SwiperCarousel: React.FC<IPropsSwiper> = ({ setCurrentData, data, slidePer
             observeParents={true}
             onSlideNextTransitionEnd={((slide) => {
                 setCurrentData(data[slide.realIndex])
+                setPlayVideo(false)
             })
             }
             slideActiveClass='banner-active'

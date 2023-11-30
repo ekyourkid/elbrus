@@ -20,17 +20,6 @@ body {
   background: '#FFFFFF'
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-p {
-  font-family: 'Jost', sans-serif;
-}
 
 .step-icon {
   fill: var(--primary-blue-blue-10, #DDEFFC);
@@ -51,10 +40,12 @@ p {
 }
 
 .banner {
+   opacity: 100%;
   transition: 1.8s;
 }
 
 .banner::before {
+  opacity: 0%;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -70,7 +61,7 @@ p {
   color: #8f224a;
   cursor: pointer;
   display: inline-block;
-  font-family: "liberator";
+  font-family: "liberator",'sans-serif';
   font-size: 17px;
   line-height: 1;
   padding: 15px 35px 12px;
