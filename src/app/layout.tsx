@@ -1,12 +1,9 @@
-import { Josefin_Sans, Jost } from 'next/font/google'
+import { Inter, Josefin_Sans, Jost } from 'next/font/google'
 import './globals.css'
 import Footer from './components/layout/Footer'
-// import Navbar from './components/layout/navigation/Navbar'
-// import DrawerComponent from './components/layout/navigation/Drawer'
 import { TailwindIndicator } from './components/utils/breakpoint-indicator'
-import DrawerComponent from './components/layout/navigation/Drawer'
 
-const josefin_sans = Josefin_Sans({ subsets: ['latin'] })
+const josefin_sans = Josefin_Sans({ subsets: ['latin','latin-ext']})
 const jost = Jost({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -42,7 +39,7 @@ export default function RootLayout({
       </head>
       {/* <DrawerComponent/> */}
       {/* <Navbar/> */}
-      <body className={"w-screen overflow-x-hidden"}>{children}</body>
+      <body className={jost.className}>{children}</body>
       <Footer />
     </html>
   )
