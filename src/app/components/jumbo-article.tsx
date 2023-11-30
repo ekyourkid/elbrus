@@ -11,7 +11,7 @@ const JumboArticle = () => {
                 <h2 className=" w-full 2xl:w-8/12 font-semibold text-xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl leading-none">
                     EXPEDISI JAVA ANDESIT MARATHON 2023
                 </h2>
-                <p className="w-full text-md text-slate-600 2xl:w-11/12 ">
+                <p className="w-full text-md text-slate-600 2xl:w-11/12 2xl:text-xl ">
                     Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur. berangkat menggunakan mobil carteran dari teman Mapala Palmasti banjarnegara (Rhino), Sampai ditebing sepikul sekitar pukul 05.00 pagi. eky dan abi langsung mengurus perizinan dari kantor desa, kepolisian, puskesmas, dan (tni), sedangkan mas hafri stay di kaki tebing untuk menyiapkan camp darat. Pada etape ini Alvin Reggy Pratama(egi) bisa menemani kegiatan pemanjatan karna etape sebelumnya ia tidak bisa menemani karna ada urusan kerja.
                 </p>
                 <button className="w-44 h-10 bg-[#F92424] text-white font-semibold rounded-md hover:bg-red-800">
