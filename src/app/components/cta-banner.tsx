@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const CTABanner = () => {
@@ -21,7 +22,9 @@ const CTABanner = () => {
                 </h2>
                 <p>Description goes here</p>
                 <section className="flex w-full sm:w-1/2 justify-evenly mt-3">
+                    <Link href={"/recruitment"} className="w-full" >
                     <button className="bg-[#ee2525] rounded-full p-1 w-full uppercase hover:bg-red-600">join tricora</button>
+                    </Link>
                 </section>
             </div>
         </main>

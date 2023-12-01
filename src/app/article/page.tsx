@@ -4,17 +4,17 @@ import ArticleList from "../components/article-list";
 
 const ArticleDetailPage = () => {
     return (
-        <div className="space-y-14">
+        <div className="">
             {/* media screen for LG - 2XL */}
-            <div className="hidden lg:flex flex-row space-x-5 p-10">
-                <div className="bg-[#F92424] rounded-md basis-20 flex justify-center items-center h-20 text-4xl font-extrabold text-white ">
+            <div className="hidden lg:flex flex-row space-x-5 p-20">
+                <div className="bg-[#F92424] grit rounded-sm flex justify-center items-center h-10 w-10 aspect-square text-3xl font-extrabold text-white ">
                     01
                 </div>
-                <div className=" basis-1/2 space-y-5">
-                    <h1 className="text-4xl font-bold w-96">
+                <div className="basis-1/2">
+                    <h1 className="text-4xl font-bold w-2/3">
                         EXPEDISI JAVA ANDESIT MARATHON 2023
                     </h1>
-                    <section className=" w-5/6 space-y-5 text-lg">
+                    <section className=" w-5/6 space-y-5 text-lg mt-5">
                         <p>
                             Setelah menyelesaikan perintisan jalur multi pitch
                             ditebing lawe Banjarnegara, Jawa Tengah, Tim java
@@ -36,7 +36,7 @@ const ArticleDetailPage = () => {
                         </p>
                     </section>
                 </div>
-                <div className=" basis-1/2 h-full">
+                <div className="basis-1/2 h-full">
                     <Image
                         src={"/images/manjat.png"}
                         alt="article-photo"
@@ -50,7 +50,7 @@ const ArticleDetailPage = () => {
                 <h1 className="font-semibold text-xl">
                     Sepikul
                 </h1>
-                <section className="space-y-5 pl-5">
+                <section className="space-y-5">
                     <p>
                         26 september 2023 <tr></tr>Setelah menyelesaikan
                         perintisan jalur multi pitch ditebing lawe Banjarnegara,
@@ -158,15 +158,17 @@ const ArticleDetailPage = () => {
             {/* media screen for XS - MD */}
             <div className="lg:hidden">
                 <div
-                    className="flex flex-row bg-cover bg-no-repeat space-x-5 h-80 p-5 pt-4"
+                    className="flex flex-col items-end justify-end bg-cover bg-no-repeat space-x-5 h-80 p-2 "
                     style={{ backgroundImage: "url(./images/manjat.png)" }}
                 >
-                    <h1 className="bg-[#F92424] rounded-md text-white font-extrabold flex justify-center items-center basis-12 sm:basis-16 h-10 sm:h-16 xs:text-xl sm:text-3xl">
-                        01
-                    </h1>
-                    <h1 className="font-extrabold basis-80 sm:basis-5/6 pl-1 flex justify-start items-start text-xl sm:text-3xl md:basis-96">
-                        EXPEDISI JAVA ANDESIT MARATHON 2023
-                    </h1>
+                    <section className="flex h-min  bg-white">
+                        <h1 className="bg-[#F92424] grit w-20 mr-3 text-3xl text-white font-extrabold flex justify-center items-center">
+                            01
+                        </h1>
+                        <h1 className="p-3 font-bold line-clamp-3">
+                            EXPEDISI JAVA ANDESIT MARATHON 2023
+                        </h1>
+                    </section>
                 </div>
                 <div className="pt-8 space-y-5 text-base p-5">
                     <p>
@@ -294,7 +296,6 @@ const ArticleDetailPage = () => {
                     </p>
                 </div>
             </div>
-
             <ArticleList />
         </div>
     );
