@@ -14,12 +14,12 @@ type Display = {
 }
 
 const LIST = [
-  { id: 0, title: 'ISLAND PEAKS', label: 'Expedisi', imageSrc: '/images/slide-1.png', bgSrc: 'images/bg-1.png' },
-  { id: 1, title: 'Goa Cikarae', label: 'Mini Session', imageSrc: '/images/slide-2.png', bgSrc: 'images/bg-2.jpg' },
-  { id: 2, title: 'Gunung Gede', label: 'Mini Session', imageSrc: '/images/slide-3.png', bgSrc: 'images/bg-3.jpg' },
-  { id: 3, title: 'Gunung Raung', label: 'Wandering Session', imageSrc: '/images/slide-4.png', bgSrc: 'images/bg-4.jpg' },
-  { id: 4, title: 'Bavery Hills', label: 'Mini Session', imageSrc: '/images/slide-2.png', bgSrc: 'images/bg-5.jpg' },
-  { id: 5, title: 'K2 Expedition', label: 'Mini Session', imageSrc: '/images/bg-6.jpg', bgSrc: 'images/bg-6.jpg' },
+  { id: 0, title: 'ISLAND PEAKS', label: 'Expedisi', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/16B4GYh/event-1.jpg' },
+  { id: 1, title: 'Goa Cikarae', label: 'Mini Session', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/ch5Wd63/bg-article.jpg' },
+  { id: 2, title: 'Gunung Gede', label: 'Mini Session', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/C82fbrk/bg-6.jpg' },
+  { id: 3, title: 'Gunung Raung', label: 'Wandering Session', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/TR7nBYx/path-1.jpg' },
+  { id: 4, title: 'Bavery Hills', label: 'Mini Session', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/QjC0Bwr/bg-4.jpg' },
+  { id: 5, title: 'K2 Expedition', label: 'Mini Session', imageSrc: 'https://i.ibb.co/rwC1PTx/slide-4.png', bgSrc: 'https://i.ibb.co/w7jpnNc/tcr-1.jpg' },
 ]
 
 const TextSection: React.FC<{ data: any }> = ({ data }) => {
@@ -34,8 +34,8 @@ const TextSection: React.FC<{ data: any }> = ({ data }) => {
           <p className='grit bg-[#F92424] w-10 h-10 flex justify-center items-center font-bold text-2xl text-white'>0{data.id + 1}</p>
           <h1 className='font-base text-white uppercase'>{data?.label}</h1>
         </section>
-        <h2 className='grit text-5xl md:text-[80px] font-bold text-white leading-[95%] uppercase'>{data?.title}</h2>
-        <p className='text-white font-light text-sm'>{data?.description} Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur</p>
+        <h2 className='grit text-3xl md:text-[60px] font-bold text-white leading-[95%] uppercase'>{data?.title}</h2>
+        <p className='text-white font-light text-md'>{data?.description} Setelah menyelesaikan perintisan jalur multi pitch ditebing lawe Banjarnegara, Jawa Tengah, Tim java andesit marathon bergeser ke tebing sepikul Jawa Timur</p>
         <a href="http://www.nature.org/new-wild/keep-hope-alive/" className="btn grit">
           Read More
         </a>
@@ -54,10 +54,11 @@ const HeroSlider = () => {
 
   return (
     <div className='relative h-screen overflow-hidden'>
+
       {playVideo &&
         <video
           id="background-video"
-          className='banner transition-opacity duration-1000 ease-in opacity-100 lg:hidden'
+          className="absolute inset-0 object-cover h-screen xl:h-auto transition-opacity duration-1000 ease-in opacity-100 transform"
           loop
           autoPlay
           muted
