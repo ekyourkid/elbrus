@@ -60,8 +60,8 @@ const SwiperCarousel: React.FC<IPropsSwiper> = ({ setCurrentData, data, slidePer
             observer={true}
             observeParents={true}
             onSlideNextTransitionEnd={((slide) => {
-                setCurrentData(data[slide.realIndex])
                 setPlayVideo(false)
+                setCurrentData(data[slide.realIndex])
             })
             }
             slideActiveClass='banner-active'

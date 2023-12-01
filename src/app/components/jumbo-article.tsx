@@ -86,11 +86,11 @@ const JumboArticle = () => {
                     ACTIVITY REPORT <span className="text-red-600">.</span>
                 </h1>
                 <Image
-                    src={"/images/manjat.png"}
+                    src={"https://i.ibb.co/ch5Wd63/bg-article.jpg"}
                     alt="climbing"
                     width={621}
                     height={621}
-                    className="w-full min-w-[500px] h-80 md:h-full object-cover cursor-pointer aspect-square"
+                    className="w-full md:min-w-[400px] h-80 md:h-full object-cover cursor-pointer aspect-square"
                 />
             </div>
         </div>
