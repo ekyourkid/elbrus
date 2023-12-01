@@ -1,9 +1,10 @@
+import Link from "next/link"
 import React from "react"
 
 const CTABanner = () => {
 
     return (
-        <main className="w-full h-[400px] md:h-[600px] p-5 md:p-10 bg-no-repeat bg-cover rounded  flex flex-col justify-between"
+        <main className="w-full h-[400px] md:h-[600px] p-5 md:p-10 bg-no-repeat bg-cover rounded flex flex-col justify-between"
             style={{
                 backgroundImage: 'url(./images/tcr-1.jpg)',
                 backgroundPosition: 'center',
@@ -21,7 +22,9 @@ const CTABanner = () => {
                 </h2>
                 <p>Description goes here</p>
                 <section className="flex w-full sm:w-1/2 justify-evenly mt-3">
+                    <Link href={"/recruitment"} className="w-full" >
                     <button className="bg-[#ee2525] rounded-full p-1 w-full uppercase hover:bg-red-600">join tricora</button>
+                    </Link>
                 </section>
             </div>
         </main>
