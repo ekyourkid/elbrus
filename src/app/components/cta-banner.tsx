@@ -3,7 +3,7 @@ import React from "react"
 const CTABanner = () => {
 
     return (
-        <main className="w-full h-[400px] md:h-[600px] p-5 md:p-10 bg-no-repeat bg-cover rounded  flex flex-col justify-between"
+        <main className="w-full h-[400px] md:h-[600px] p-5 md:p-10 bg-no-repeat bg-cover rounded flex flex-col justify-between"
             style={{
                 backgroundImage: 'url(./images/tcr-1.jpg)',
                 backgroundPosition: 'center',
